@@ -7,7 +7,7 @@ geometry: bin/geometry
 bin/geometry: obj/src/geometry/geometry.o obj/src/libgeo/libgeo.a
 	gcc -c -I src $(CFLAGS) -o $@ $< -lm
 	
-obj/src/geometry/geometry.o: src/geometry/geometry.c
+obj/src/geometry/geometry.o: 
 	gcc -c -I src $(CFLAGS) -o $@ $< -lm	
 	
 obj/src/libgeo/libgeo.a: obj/src/libgeo/Check.o obj/src/libgeo/circle_area.o obj/src/libgeo/circle_perimeter.o obj/src/libgeo/triangle_area.o obj/src/libgeo/triangle_perimeter.o
